@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Estudo Android API</string>
+
+    <!--Botoes genericos-->
+    <string name="seu_nome">Digite seu nome</string>
+    <string name="nome_desejado">Digite o nome desejado</string>
+    <string name="erro_nome_vazio">Informe um nome</string>
+    <string name="enviar">Enviar</string>
+
+  <!-- Botoes menu principal-->
+    <string name="menu_cliente">Cliente</string>
+    <string name="menu_venda">Venda</string>
+    <string name="menu_item">Item</string>
+    <string name="menu_produto">Produto</string>
+
+    <!--Botoes menu Cliente-->
+    <string name="encontrar_cliente">Encontrar Cliente</string>
+    <string name="cadastrar_cliente">Cadastrar Cliente</string>
+    <string name="deletar_cliente">Deletar Cliente</string>
+    <string name="listar_clientes">Listar Clientes</string>
+</resources>

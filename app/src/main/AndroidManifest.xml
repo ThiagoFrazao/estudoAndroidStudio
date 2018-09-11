@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helloworld">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".TelaInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MenuPrincipal"
+            android:parentActivityName=".TelaInicial">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TelaInicial" />
+        </activity>
+
+        <activity android:name=".cliente.MenuCliente" android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+
+        <activity
+            android:name=".cliente.FindCliente"
+            android:parentActivityName=".cliente.MenuCliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente.MenuCliente" />
+        </activity>
+
+        <activity android:name=".cliente.ListarClientes" android:parentActivityName=".cliente.MenuCliente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".cliente.MenuCliente" />
+        </activity>
+
+    </application>
+
+</manifest>
